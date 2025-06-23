@@ -2,9 +2,9 @@ const btnBuscar = document.getElementById("btn-buscar");
 const contenedorPadre = document.getElementById("contenedor-data")
 const urlDragonBall = "https://dragonball-api.com/api/characters";
 
-const cargarDatos = async (url) => {
+const cargarDatos = async (urlDragonBall) => {
     try {
-        const response = await fetch (url);
+        const response = await fetch (urlDragonBall);
 
         if (!response.ok) {
             throw new Error("Error en la API");
